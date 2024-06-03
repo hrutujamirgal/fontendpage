@@ -1,0 +1,416 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.popup-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form label[for="email"] {
+  margin-top: 20px;
+}
+
+form label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form button {
+  background-color: #ff3366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #ff3366;
+}
+
+/* contact us section */
+.contactus {
+  width: 170vh;
+  height: 80vh;
+  margin: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 15vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.textHeadsmall {
+  color: #ff3366;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.headBig {
+  font-weight: 900;
+  font-size: 32px;
+  margin-top: 0%;
+  /* width: 70vh;111 */
+}
+
+.headinfosmall {
+  font-weight: 100;
+  font-size: 14px;
+  width: 70vh;
+}
+
+.getButton {
+  margin-top: 4%;
+  background-color: #ff3366;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2%;
+  margin-left: 3%;
+  color: white;
+  cursor: pointer;
+}
+
+.getButton:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/*contact form*/
+.showOnEnter {
+  visibility: hidden;
+  transition: opacity 0.3s ease-in;
+  font-size: 14px;
+  color: #5c5b5b;
+}
+
+.nameContact {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+  margin-top: 0%;
+}
+.na {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+}
+
+input[type="submit"] {
+  background-color: #ff3366;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+/* slidr sectiion */
+
+.section {
+  margin-right: 15vh;
+  margin-left: 15vh;
+  padding: 2%;
+  height: 120vh;
+  margin-top: 4%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  width: 150vh;
+  padding: 1%;
+}
+
+/* .design-content {
+  display:none;
+  height: 430px;
+  width: 280px;
+  background-color: #ff3366;
+  
+  
+} */
+
+
+
+.design-content {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff3366; 
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    align-content: center;
+}
+
+.slide:hover .design-content {
+    display: block; 
+    opacity: 1; 
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3%;
+}
+
+.headContent {
+  font-size: 18px;
+  font-weight: 100;
+  color: white;
+}
+
+.descContent {
+  color: white;
+  font-size: 14px;
+}
+
+.contentBut {
+  margin-top: 6%;
+  background-color: white;
+  color: #ff3366;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 4%;
+}
+
+
+.slider {
+  position: relative;
+  max-width: 200vh;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  margin-right: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.navigation {
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  width: 18vh;
+  height: 6vh;
+}
+
+.active {
+  border: 1px solid #ff3366;
+}
+
+.dot {
+  width: 4vh;
+  border-radius: 50%;
+  margin-right: 2%;
+  padding: 5%;
+  align-items: center;
+  /* position: absolute; */
+}
+.dot img {
+  margin-left: 32%;
+  margin-top: 32%;
+}
+
+
+
+
+/* we are best sction*/
+.section1 {
+  margin-right: 15vh;
+  margin-left: 15vh;
+  padding: 2%;
+}
+
+.centerAlign {
+  text-align: center;
+}
+
+.flexgrrowth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.new {
+  margin: 3%;
+  align-items: center;
+}
+
+.heading {
+  font-weight: 700;
+}
+
+
+
+/* menulist */
+
+.listImg {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgproject {
+  width: 170vh;
+  height: 70vh;
+  margin-right: 3%;
+  background-image: url("../frontendpage/Images/fruit.jpg");
+  background-repeat: no-repeat;
+  border-radius: 3%;
+}
+
+.flexcol .selected {
+  background-color: #ff3366;
+  color: white;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flxCol {
+  background-color: #f6f6f6;
+  padding: 5.5%;
+}
+
+.headtitle {
+  font-weight: 800;
+}
+
+/*growth*/
+.no {
+  font-size: 34px;
+  margin-left: 15%;
+}
+
+.hover img {
+  margin-left: 30%;
+}
+
+.hover {
+  padding: 15px;
+  width: 25vh;
+  align-content: center;
+  background-color: #ffffff;
+  transition: box-shadow 0.5s ease;
+}
+
+.hover:hover {
+  box-shadow: 0 8px 16px rgba(151, 149, 149, 0.842) ;
+}
+
+.black {
+  background-color: #f7f7f7;
+}
+
+/*say section */
+.say {
+  display: flex;
+  flex-direction: column;
+  width: 130vh;
+  margin-left: 45vh;
+}
+
+.banner {
+  background-image: url("../frontendpage/Images/NoPath\ -\ Copy.png");
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.said {
+  display: flex;
+  flex-direction: row;
+}
+
+.said .namesaid {
+  color: #ff3366;
+  font-weight: 700;
+}
+
+.said .from {
+  margin-left: 2%;
+}
+
+.banner img {
+  margin-left: 5%;
+}
