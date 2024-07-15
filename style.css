@@ -354,7 +354,6 @@ input[type="submit"] {
   width: 170vh;
   height: 70vh;
   margin-right: 3%;
-  background-image: url("../frontendpage/Images/fruit.jpg");
   background-repeat: no-repeat;
   border-radius: 3%;
 }
@@ -430,7 +429,7 @@ input[type="submit"] {
 }
 
 .banner {
-  background-image: url("/Images/Copy.png");
+  background-image: url("./Images/Copy.png");
   padding-top: 5%;
   padding-bottom: 5%;
 }
